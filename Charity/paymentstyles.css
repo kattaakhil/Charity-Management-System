@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/donations.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+nav{
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    float: left; /* overflown the background color */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 25px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background-color: seagreen;
+}
+.container{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+.box{
+	margin-top:85px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-60%,-60%);
+    width: 450px;
+    height: 625px;
+    padding: 40px;
+    background:rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow:0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    color: white;
+
+}
+.box .inputBox
+{
+    position: relative;
+
+}
+
+
+.box .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size:16px;
+    color: #fff;margin-bottom: 30px;
+    border: none;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+.box .inputBox label
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:focus ~label,
+.box .inputBox input:valid ~label
+{
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.box input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: auto;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+
+
+}
+.box input[type="submit"]:hover{
+    color:white;
+    background-color: #7b1fa2;
+
+}
